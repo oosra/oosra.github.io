@@ -31,19 +31,19 @@ var people = [
     ["K1NGSW1FFER", 75, 0, true],
     ["K1NGSW0NKER", 225, 0, true],
     ["Mother TopTip", 425, 0, false],
-    ["French Toast", 600, 0, false],
-    ["Waffles", 700, 0, false],
+    ["All-Around-Grace", 575, 0, false],
+    ["RiverStorm", 695, 0, false],
 
     ["TipTop", 75, 1, true],
-    ["Ragnar18", 225, 1, false],
+    ["Ragnar18", 230, 1, false],
     ["Indigo", 315, 1, false],
     ["Crystal", 395, 1, false],
     ["gabe but also not gabe", 515, 1, false],
     ["Vampxre", 700, 1, true],
 
     ["LuminousBox", 65, 2, false],
-    ["All-Around-Grace", 215, 2, false],
-    ["RiverStorm", 340, 2, false],
+    ["French Toast", 215, 2, false],
+    ["Waffles", 340, 2, false],
     ["GrayBurn", 430, 2, false],
     ["WildPants", 520, 2, false],
     ["SCP-999", 615, 2, false],
@@ -51,7 +51,15 @@ var people = [
 
     ["MarriageBot", 250, 3, false],
     ["Mrtacobell11", 500, 3, false],
-    ["MaleCowMilkerHelpMeuwuowo", 650, 3, false]
+    ["MaleCowMilkerHelpMeuwuowo", 650, 3, false],
+
+    ["Mentalman", 125, 4, true],
+    ["VomitComedy", 250, 4, true],
+    ["the one who sits", 615, 4, false],
+
+    ["KFC ADVERTISEMENT", 175, 5, true],
+    ["Emperor Tsuki", 500, 5, false],
+    ["pineappleman9876", 650, 5, false]
 ]
 
 // Handles Writing a Name From Parameters
@@ -64,7 +72,7 @@ function writeName(name, xPos, gen, royal) {
 }
 
 // Title
-ctx.font = "48px Ravie";
+ctx.font = "48px Papyrus";
 ctx.textAlign = "center";
 ctx.fillText("The Top Hat Kingdom Family Graph", c.w / 2, 50, c.w - 20);
 
@@ -145,7 +153,7 @@ ctx.strokeStyle = GRN;
 ctx.stroke();
 ctx.closePath();
 
-// Mother TopTip === gabe but also not gabe === French Toast === Waffles ==> Vampxre
+// Mother TopTip === gabe but also not gabe === All-Around-Grace === RiverStorm ==> Vampxre
 ctx.beginPath();
 ctx.moveTo(460, 142);
 ctx.lineTo(460, 167);
@@ -154,6 +162,8 @@ ctx.lineTo(700, 142);
 ctx.moveTo(600, 167);
 ctx.lineTo(600, 142);
 ctx.moveTo(550, 167);
+ctx.lineTo(550, 180);
+ctx.moveTo(550, 200);
 ctx.lineTo(550, 212);
 ctx.strokeStyle = RED;
 ctx.stroke();
@@ -222,7 +232,7 @@ ctx.strokeStyle = PUR;
 ctx.stroke();
 ctx.closePath();
 
-// Indigo ==> All-Around-Grace, RiverStorm, GrayBurn
+// Indigo ==> French Toast, Waffles, GrayBurn
 ctx.beginPath();
 ctx.moveTo(305, 242);
 ctx.lineTo(305, 292);
@@ -263,3 +273,130 @@ ctx.lineTo(710, 312);
 ctx.strokeStyle = BLU;
 ctx.stroke();
 ctx.closePath();
+
+// gabe but also not gabe === SCP-999 ==> Mrtacobell11, MaleCowMilkerHelMeuwuowo
+ctx.beginPath();
+ctx.moveTo(570, 242);
+ctx.lineTo(570, 362);
+ctx.lineTo(625, 362);
+ctx.lineTo(625, 342);
+ctx.strokeStyle = RED;
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.moveTo(500, 412);
+ctx.lineTo(500, 392);
+ctx.lineTo(650, 392);
+ctx.lineTo(650, 412);
+ctx.moveTo(585, 392);
+ctx.lineTo(585, 362);
+ctx.strokeStyle = BLU;
+ctx.stroke();
+ctx.closePath();
+
+// WildPants ==> MarriageBot
+ctx.beginPath();
+ctx.moveTo(520, 342);
+ctx.lineTo(520, 377);
+ctx.lineTo(225, 377);
+ctx.lineTo(225, 412)
+ctx.strokeStyle = BLU;
+ctx.stroke();
+ctx.closePath();
+
+// French Toast === Waffles
+ctx.beginPath();
+ctx.moveTo(215, 342);
+ctx.lineTo(215, 362);
+ctx.lineTo(340, 362);
+ctx.lineTo(340, 342);
+ctx.strokeStyle = RED;
+ctx.stroke();
+ctx.closePath();
+
+// TipTop =/= Waffles =/= MarriageBot ==> Mentalman, VomitComedy
+ctx.beginPath();
+ctx.moveTo(100, 242);
+ctx.lineTo(100, 310);
+ctx.lineTo(135, 310);
+ctx.lineTo(135, 410);
+ctx.moveTo(135, 430);
+ctx.lineTo(135, 462);
+ctx.lineTo(180, 462);
+ctx.moveTo(200, 462);
+ctx.lineTo(215, 462);
+ctx.lineTo(215, 442);
+
+ctx.moveTo(355, 342);
+ctx.lineTo(355, 369.5);
+ctx.lineTo(165, 369.5);
+ctx.lineTo(165, 462);
+ctx.strokeStyle = RED;
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.moveTo(125, 512);
+ctx.lineTo(125, 492);
+ctx.lineTo(225, 492);
+ctx.lineTo(225, 512);
+ctx.moveTo(150, 462);
+ctx.lineTo(150, 492);
+ctx.strokeStyle = BLU;
+ctx.stroke();
+ctx.closePath();
+
+// MarriageBot =/= MaleCowMilkerHelpMeuwuowo === Reaper Leviathan ==> the one who sits
+ctx.beginPath();
+ctx.moveTo(275, 442);
+ctx.lineTo(275, 462);
+ctx.lineTo(360, 462);
+ctx.moveTo(380, 462);
+ctx.lineTo(750, 462);
+ctx.lineTo(750, 342);
+ctx.moveTo(650, 462);
+ctx.lineTo(650, 442);
+ctx.strokeStyle = RED;
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.moveTo(600, 462);
+ctx.lineTo(600, 512);
+ctx.strokeStyle = BLU;
+ctx.stroke();
+ctx.closePath();
+
+// Mentalman === VomitComedy ==> KFC ADVERTISEMENT
+ctx.beginPath();
+ctx.moveTo(125, 542);
+ctx.lineTo(125, 562);
+ctx.lineTo(250, 562);
+ctx.lineTo(250, 542);
+ctx.strokeStyle = RED;
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.moveTo(180, 562);
+ctx.lineTo(180, 612);
+ctx.strokeStyle = BLU;
+ctx.stroke();
+ctx.closePath();
+
+// the one who sits ==> Emperor Tsuki, pineappleman9876
+ctx.beginPath();
+ctx.moveTo(500, 612);
+ctx.lineTo(500, 592);
+ctx.lineTo(650, 592);
+ctx.lineTo(650, 612);
+ctx.moveTo(575, 592);
+ctx.lineTo(575, 542);
+ctx.strokeStyle = BLU;
+ctx.stroke();
+ctx.closePath();
+
+// MarriageBot =/= KFC ADVERTISEMENT
+ctx.beginPath();
+// ctx.moveTo(, 442)
