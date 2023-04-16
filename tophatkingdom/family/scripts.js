@@ -6,6 +6,7 @@ const RED = "#E32424";
 const GRN = "#56B344";
 const BLU = "#236BDE";
 const PUR = "#A623DE";
+const BLK = "#000000";
 
 var canvas = $("canvas");
 /** @type {CanvasRenderingContext2D} */
@@ -28,7 +29,7 @@ var generations = [
     "Leaked Military Documents"
 ];
 var people = [
-    ["K1NGSW1FFER", 75, 0, true],
+    ["👑 K1NGSW1FFER", 75, 0, true],
     ["K1NGSW0NKER", 225, 0, true],
     ["Mother TopTip", 425, 0, false],
     ["All-Around-Grace", 575, 0, false],
@@ -59,7 +60,13 @@ var people = [
 
     ["KFC ADVERTISEMENT", 175, 5, true],
     ["Emperor Tsuki", 500, 5, false],
-    ["pineappleman9876", 650, 5, false]
+    ["pineappleman9876", 650, 5, false],
+    
+    ["[Deleted User]", 125, 6, true],
+    ["Not An Orphan Slayer", 285, 6, true],
+    ["Trouble", 450, 6, false],
+    ["Music Daddy", 550, 6, false],
+    ["Whhhyyyyy", 700, 6, false]
 ]
 
 // Handles Writing a Name From Parameters
@@ -178,8 +185,10 @@ ctx.closePath();
 
 // TipTop === Vampxre
 ctx.beginPath();
-ctx.moveTo(745, 212);
-ctx.lineTo(745, 110);
+ctx.moveTo(740, 242);
+ctx.lineTo(740, 262);
+ctx.lineTo(760, 262)
+ctx.lineTo(760, 110);
 ctx.lineTo(350, 110);
 ctx.lineTo(350, 162);
 ctx.lineTo(245, 162);
@@ -399,4 +408,72 @@ ctx.closePath();
 
 // MarriageBot =/= KFC ADVERTISEMENT
 ctx.beginPath();
-// ctx.moveTo(, 442)
+ctx.moveTo(235, 442);
+ctx.lineTo(235, 482);
+ctx.lineTo(235, 512);
+ctx.lineTo(325, 512);
+ctx.lineTo(325, 550);
+ctx.moveTo(325, 570);
+ctx.lineTo(325, 662);
+ctx.lineTo(175, 662);
+ctx.lineTo(175, 642);
+ctx.strokeStyle = RED;
+ctx.stroke();
+ctx.closePath();
+
+// MarriageBot === Emperor Tsuki
+ctx.beginPath();
+ctx.moveTo(255, 442);
+ctx.lineTo(255, 497);
+ctx.lineTo(425, 497);
+ctx.lineTo(425, 662);
+ctx.lineTo(500, 662);
+ctx.lineTo(500, 642);
+ctx.strokeStyle = RED;
+ctx.stroke();
+ctx.closePath();
+
+// KEY (For Ryker)
+var keyCanvas = $("key");
+/** @type {CanvasRenderingContext2D} */
+var kctx = keyCanvas.getContext("2d");
+
+kctx.lineCap = "round";
+kctx.lineWidth = 5;
+kctx.fillStyle = BLK;
+kctx.font = "bold 16px Arial";
+
+kctx.fillText("Royalty 🟡", 20, 20);
+
+
+kctx.fillText("Marriage", 20, 50)
+kctx.beginPath();
+kctx.moveTo(90, 46);
+kctx.lineTo(170, 46);
+kctx.strokeStyle = RED;
+kctx.stroke();
+kctx.closePath();
+
+kctx.fillText("Divorce", 20, 80)
+kctx.beginPath();
+kctx.moveTo(90, 76);
+kctx.lineTo(120, 76);
+kctx.moveTo(140, 76);
+kctx.lineTo(170, 76);
+kctx.strokeStyle = RED;
+kctx.stroke();
+kctx.closePath();
+
+kctx.fillText("Children", 200, 20);
+kctx.beginPath();
+kctx.moveTo(270, 16);
+kctx.lineTo(360, 16);
+kctx.strokeStyle = BLU;
+kctx.stroke();
+kctx.closePath();
+
+kctx.fillText("Emancipated Children", 200, 50);
+kctx.beginPath();
+kctx.moveTo(300, 50);
+//kctx.lineTo()
+kctx.closePath();
