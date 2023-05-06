@@ -61,12 +61,18 @@ var people = [
     ["KFC ADVERTISEMENT", 175, 5, true],
     ["Emperor Tsuki", 500, 5, false],
     ["pineappleman9876", 650, 5, false],
-    
+
     ["[Deleted User]", 125, 6, true],
     ["Not An Orphan Slayer", 285, 6, true],
     ["Trouble", 450, 6, false],
     ["Music Daddy", 550, 6, false],
-    ["Whhhyyyyy", 700, 6, false]
+    ["Whhhyyyyy", 700, 6, false],
+
+    ["RandomestPersonOnEarth", 150, 7, true],
+    ["BirthdayBot", 340, 7, false],
+    ["EthanA", 435, 7, false],
+    ["Truth or Dare", 560, 7, false],
+    ["Ebay Simulator", 700, 7, false]
 ]
 
 // Handles Writing a Name From Parameters
@@ -406,7 +412,7 @@ ctx.strokeStyle = BLU;
 ctx.stroke();
 ctx.closePath();
 
-// MarriageBot =/= KFC ADVERTISEMENT
+// MarriageBot =/= KFC ADVERTISEMENT ==> [Deleted User], Not An Orphan Slayer
 ctx.beginPath();
 ctx.moveTo(235, 442);
 ctx.lineTo(235, 482);
@@ -421,7 +427,18 @@ ctx.strokeStyle = RED;
 ctx.stroke();
 ctx.closePath();
 
-// MarriageBot === Emperor Tsuki
+ctx.beginPath();
+ctx.moveTo(225, 662);
+ctx.lineTo(225, 692);
+ctx.moveTo(125, 712);
+ctx.lineTo(125, 692);
+ctx.lineTo(285, 692);
+ctx.lineTo(285, 712);
+ctx.strokeStyle = BLU;
+ctx.stroke();
+ctx.closePath();
+
+// MarriageBot === Emperor Tsuki ==> Trouble, Music Daddy
 ctx.beginPath();
 ctx.moveTo(255, 442);
 ctx.lineTo(255, 497);
@@ -432,6 +449,29 @@ ctx.lineTo(500, 642);
 ctx.strokeStyle = RED;
 ctx.stroke();
 ctx.closePath();
+
+ctx.beginPath();
+ctx.moveTo(465, 662);
+ctx.lineTo(465, 692);
+ctx.moveTo(450, 712);
+ctx.lineTo(450, 692);
+ctx.lineTo(550, 692);
+ctx.lineTo(550, 712);
+ctx.strokeStyle = BLU;
+ctx.stroke();
+ctx.closePath();
+
+// pineappleman9876 =>=> Whhhyyyyy
+ctx.beginPath();
+ctx.moveTo(675, 642);
+ctx.lineTo(675, 712);
+ctx.strokeStyle = PUR;
+ctx.stroke();
+ctx.closePath();
+
+// [Deleted User] =/= Not An Orphan Slayer
+ctx.beginPath();
+ctx.moveTo();
 
 // KEY (For Ryker)
 var keyCanvas = $("key");
