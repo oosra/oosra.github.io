@@ -26,7 +26,8 @@ var generations = [
     "Robot Uprising",
     "Lukewarm Ginger Ale",
     "Fun Gummies",
-    "Leaked Military Documents"
+    "Leaked Military Documents",
+    "Sussy Balls"
 ];
 var people = [
     ["👑 K1NGSW1FFER", 75, 0, true],
@@ -72,7 +73,14 @@ var people = [
     ["BirthdayBot", 340, 7, false],
     ["EthanA", 435, 7, false],
     ["Truth or Dare", 560, 7, false],
-    ["Ebay Simulator", 700, 7, false]
+    ["Ebay Simulator", 700, 7, false],
+
+    ["Confess Your Sins", 200, 8, true],
+    ["WonderBoy", 450, 8, false],
+    ["Discobot", 630, 8, false],
+
+    ["White-mystery AIRHEAD", 150, 9, true],
+    ["Lazydonkey", 350, 10, true]
 ]
 
 // Handles Writing a Name From Parameters
@@ -469,9 +477,147 @@ ctx.strokeStyle = PUR;
 ctx.stroke();
 ctx.closePath();
 
-// [Deleted User] =/= Not An Orphan Slayer
+// [Deleted User] =/= Not An Orphan Slayer ==> RandomestPersonOnEarth
 ctx.beginPath();
-ctx.moveTo();
+ctx.moveTo(125, 742);
+ctx.lineTo(125, 762);
+ctx.lineTo(215, 762);
+ctx.moveTo(235, 762);
+ctx.lineTo(285, 762);
+ctx.lineTo(285, 742);
+ctx.strokeStyle = RED;
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.moveTo(150, 762);
+ctx.lineTo(150, 812);
+ctx.strokeStyle = BLU;
+ctx.stroke();
+ctx.closePath();
+
+// Not An Orphan Slayer === Trouble /=> EthanA -> BirthdayBot
+ctx.beginPath();
+ctx.moveTo(305, 742);
+ctx.lineTo(305, 762);
+ctx.lineTo(450, 762);
+ctx.lineTo(450, 742);
+ctx.strokeStyle = RED;
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.moveTo(435, 762);
+ctx.lineTo(435, 777);
+ctx.moveTo(435, 797);
+ctx.lineTo(435, 812);
+ctx.strokeStyle = BLU;
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.moveTo(340, 762);
+ctx.lineTo(340, 812);
+ctx.strokeStyle = GRN;
+ctx.stroke();
+ctx.closePath();
+
+// Music Daddy === Whhhyyyyy ==> Truth or Dare, Ebay Simulator
+ctx.beginPath();
+ctx.moveTo(550, 742);
+ctx.lineTo(550, 762);
+ctx.lineTo(700, 762);
+ctx.lineTo(700, 742);
+ctx.strokeStyle = RED;
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.moveTo(625, 762);
+ctx.lineTo(625, 792);
+ctx.moveTo(560, 812);
+ctx.lineTo(560, 792);
+ctx.lineTo(700, 792);
+ctx.lineTo(700, 812);
+ctx.strokeStyle = BLU;
+ctx.stroke();
+ctx.closePath();
+
+// RandomestPersonOnEarth === BirthdayBot ==> Confess Your Sins
+ctx.beginPath();
+ctx.moveTo(150, 842);
+ctx.lineTo(150, 862);
+ctx.lineTo(340, 862);
+ctx.lineTo(340, 842);
+ctx.strokeStyle = RED;
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.moveTo(200, 862);
+ctx.lineTo(200, 912);
+ctx.strokeStyle = BLU;
+ctx.stroke();
+ctx.closePath();
+
+// EthanA ==> WonderBoy
+ctx.beginPath();
+ctx.moveTo(435, 842);
+ctx.lineTo(435, 912);
+ctx.strokeStyle = BLU;
+ctx.stroke();
+ctx.closePath();
+
+// Truth or Dare === Ebay Simulator ==> Discobot
+ctx.beginPath();
+ctx.moveTo(560, 842);
+ctx.lineTo(560, 862);
+ctx.lineTo(700, 862);
+ctx.lineTo(700, 842);
+ctx.strokeStyle = RED;
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.moveTo(630, 862);
+ctx.lineTo(630, 912);
+ctx.strokeStyle = BLU;
+ctx.stroke();
+ctx.closePath();
+
+// LuminousBox === Confess Your Sins ==> White-mystery AIRHEAD
+ctx.beginPath();
+ctx.moveTo(45, 342);
+ctx.lineTo(45, 962);
+ctx.lineTo(200, 962);
+ctx.lineTo(200, 942);
+ctx.strokeStyle = RED;
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.moveTo(150, 962);
+ctx.lineTo(150, 1012);
+ctx.strokeStyle = BLU;
+ctx.stroke();
+ctx.closePath();
+
+// White-mystery AIRHEAD === WonderBoy ==> Lazydonkey
+ctx.beginPath();
+ctx.moveTo(150, 1042);
+ctx.lineTo(150, 1062);
+ctx.lineTo(450, 1062);
+ctx.lineTo(450, 942);
+ctx.strokeStyle = RED;
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.moveTo(350, 1062);
+ctx.lineTo(350, 1112);
+ctx.strokeStyle = BLU;
+ctx.stroke();
+ctx.closePath();
 
 // KEY (For Ryker)
 var keyCanvas = $("key");
@@ -507,13 +653,16 @@ kctx.closePath();
 kctx.fillText("Children", 200, 20);
 kctx.beginPath();
 kctx.moveTo(270, 16);
-kctx.lineTo(360, 16);
+kctx.lineTo(350, 16);
 kctx.strokeStyle = BLU;
 kctx.stroke();
 kctx.closePath();
 
 kctx.fillText("Emancipated Children", 200, 50);
 kctx.beginPath();
-kctx.moveTo(300, 50);
-//kctx.lineTo()
+kctx.moveTo(270, 64);
+kctx.lineTo(300, 64);
+kctx.moveTo(320, 64);
+kctx.lineTo(350, 64);
+kctx.stroke();
 kctx.closePath();
